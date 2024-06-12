@@ -1,0 +1,11 @@
+{
+    "ConfigVersion": 1,
+    "Image": "path/to/your/raspberrypi.img",
+    "MountPaths": {
+        "rootfs": "/mnt/rootfs",
+        "bootfs": "/mnt/bootfs"
+    },
+    "Process": {
+        "Hostname": "custom-rpi"
+    }
+}

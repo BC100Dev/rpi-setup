@@ -1,0 +1,10 @@
+{
+    "action": "copy",
+    "source": "path/to/source/file",
+    "dest": "path/to/destination",
+    "backup": false,
+    "mode": "0644",
+    "force": true,
+    "owner": "root",
+    "group": "root"
+}

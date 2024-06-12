@@ -1,0 +1,5 @@
+allow-hotplug {net_name}
+iface {net_name} inet static
+    address {net_addr}
+    netmask {net_mask}
+    gateway {net_gw}

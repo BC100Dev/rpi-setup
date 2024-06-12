@@ -1,0 +1,61 @@
+{
+    "ConfigVersion": 1,
+    "Image": "path/to/your/raspberrypi.img",
+    "MountPaths": {
+        "rootfs": "/mnt/rootfs",
+        "bootfs": "/mnt/bootfs"
+    },
+    "Kernel": {
+        "UsePrebuilt": false,
+        "PrebuiltKernelImageFile": "path/to/prebuilt/kernel.img",
+        "RemoteURL": "https://github.com/raspberrypi/linux",
+        "RemoteBranch": "rpi-5.15.y"
+    },
+    "Process": {
+        "Language": "en_US",
+        "Hostname": "custom-rpi",
+        "Users": [
+            {
+                "SudoAllowed": true,
+                "Name": "bc100dev",
+                "Pass": "893t57895786svdb32c"
+            }
+        ],
+        "Swap": {
+            "Enabled": false,
+            "Size": "1G"
+        },
+        "DefaultUsername": "rpi0",
+        "RootUser": {
+            "Enabled": true,
+            "Pass": "089nevbr23sdasf89sdfu789"
+        },
+        "Services": {
+            "Audio": {
+                "Enabled": true,
+                "Label": "pipewire"
+            }
+        },
+        "Network": {
+            "Static": {
+                "eth0": {
+                    "address": "172.21.19.2",
+                    "netmask": "255.255.255.0",
+                    "gateway": "172.21.19.0"
+                }
+            },
+            "Wi-Fi": {
+                "connections": [
+                    {
+                        "ssid": "My-Home-Network",
+                        "pass": "!{ask}"
+                    }
+                ]
+            }
+        },
+        "Optional_APT_repositories": [],
+        "Additional_APT_packages": []
+    },
+    "CustomActions": [
+    ]
+}

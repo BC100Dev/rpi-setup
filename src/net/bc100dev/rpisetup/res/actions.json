@@ -1,0 +1,6 @@
+{
+    "routeClass": {
+        "copy": "net.bc100dev.rpisetup.config.custom.ActionCopy",
+        ""
+    }
+}
